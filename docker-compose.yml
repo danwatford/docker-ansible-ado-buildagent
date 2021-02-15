@@ -3,6 +3,7 @@ version: "3"
 services:
   ansible:
     build: agent
+    restart: always
     volumes: 
       - .:/workspace
     env_file: .env 
