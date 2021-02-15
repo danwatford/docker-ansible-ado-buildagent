@@ -23,7 +23,7 @@ RUN apt-get install --yes software-properties-common
 RUN apt-add-repository --yes --update ppa:ansible/ansible
 RUN apt-get install --yes ansible
 
-RUN ansible-galaxy collection install community.general
+RUN ansible-galaxy collection install community.general community.docker
 
 WORKDIR /azp
 
